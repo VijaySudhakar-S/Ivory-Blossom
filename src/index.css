@@ -1,0 +1,100 @@
+:root {
+  /* Core Colors */
+  --color-temple-red: #8E1F24;
+  --color-kumkum-red: #B52A2A;
+  --color-deep-maroon: #5A171B;
+  
+  --color-trad-gold: #D4A73A;
+  --color-antique-gold: #B88A2B;
+  --color-turmeric: #E4B93F;
+  
+  --color-leaf-green: #426B3A;
+  --color-banana-green: #617A3A;
+  
+  --color-ivory: #FFF8E8;
+  --color-temple-cream: #F5E8CC;
+  
+  --color-charcoal: #24211E;
+  
+  --color-sky-blue: #168FE5;
+  --color-deep-sky: #0874C9;
+
+  /* Typography */
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-tamil: 'Noto Serif Tamil', serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+body {
+  background-color: var(--color-ivory);
+  color: var(--color-charcoal);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  color: var(--color-temple-red);
+}
+
+.tamil-text {
+  font-family: var(--font-tamil);
+}
+
+/* Utilities */
+.mix-blend-multiply {
+  mix-blend-mode: multiply;
+}
+
+.text-gold {
+  color: var(--color-trad-gold);
+}
+
+.text-temple {
+  color: var(--color-temple-red);
+}
+
+.bg-ivory {
+  background-color: var(--color-ivory);
+}
+
+.border-gold {
+  border-color: var(--color-trad-gold);
+}
+
+/* Gold Ornamental Border */
+.ornament-border {
+  border: 1px solid var(--color-trad-gold);
+  position: relative;
+  padding: 1rem;
+}
+
+.ornament-border::before, .ornament-border::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--color-trad-gold);
+}
+.ornament-border::before {
+  top: 4px;
+  left: 4px;
+}
+.ornament-border::after {
+  bottom: 4px;
+  right: 4px;
+}
